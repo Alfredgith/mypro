@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form request.method="post">
+{%csrf_token%}
+{{form.as_p}}
+<p><button type="submit">submit</button></p>
+
+
+<br>
+
+{% for x in say %}
+
+
+<p>{{x.music}}</p>
+<p>{{x.date}}</p>
+
+
+
+
+
+{% endfor %}
+
+
+
+    </form>
+    
+</body>
+</html>
